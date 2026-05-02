@@ -1,0 +1,21 @@
+name: "online judge"
+on:
+  push:
+    branches: [main]
+
+jobs:
+  judge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install git+https://github.com/pku-software/docman-homework-judge-action
+        shell: bash
+      - uses: jwlawson/actions-setup-cmake@v2
+        with:
+          cmake-version: '3.30.x'
+      - name: Build & Test
+        shell: bash
+        run: FORCE_COLOR=1 docman-judge .
