@@ -1,0 +1,15 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\third_parties",
+    "\\third_parties\\cpp-httplib",
+    "\\third_parties\\nlohmann"
+  ],
+  "PreviewInSolutionExplorer": false
+}

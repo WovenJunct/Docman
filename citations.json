@@ -1,0 +1,24 @@
+{
+    "citations": [
+      {
+        "id": "1",
+        "type": "book",
+        "isbn": "9780134092669"
+      },
+      {
+        "id": "2",
+        "type": "webpage",
+        "url": "https://pytorch.org"
+      },
+      {
+        "id": "3",
+        "type": "article",
+        "title": "A Fast File System for UNIX",
+        "author": "Marshall Kirk McKusick, William N. Joy, Samuel J. Leffler, Robert S. Fabry",
+        "journal": "ACM Transactions on Computer Systems",
+        "year": 1984,
+        "volume": 2,
+        "issue": 3
+      }
+    ]
+  }
