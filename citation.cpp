@@ -109,7 +109,7 @@ void BookCitation::fetchInfo(httplib::Client& client) {
 }
 
 std::string BookCitation::format() const {
-	return "[" + id + "] book:" + author + ", " + title + ", "
+	return "[" + id + "] book: " + author + ", " + title + ", "
 		+ publisher + ", " + std::to_string(year);
 }
 
@@ -143,7 +143,7 @@ void WebpageCitation::fetchInfo(httplib::Client& client) {
 }
 
 std::string WebpageCitation::format() const {
-	return "[" + id + "] webpage:" + title + ". Available at" + url;
+	return "[" + id + "] webpage: " + title + ". Available at " + url;
 }
 
 //直接读取文章字段
@@ -167,7 +167,7 @@ ArticleCitation::ArticleCitation(const nlohmann::json& obj) :
 void ArticleCitation::fetchInfo(httplib::Client& /*client*/) {}
 
 std::string ArticleCitation::format() const {
-	return "[" + id + "] article:" + author + ", " + title + ", " +
+	return "[" + id + "] article: " + author + ", " + title + ", " +
 		journal + ", " + std::to_string(year) + ", " +
 		std::to_string(volume) + ", " + std::to_string(issue);
 }
