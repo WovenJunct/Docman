@@ -1,3 +1,13 @@
 build/
 .cache/
 .vscode/
+
+.vs/
+*.ipch
+*.pch
+*.suo
+*.user
+*.cache
+*.ilk
+*.pdb
+ipch/
